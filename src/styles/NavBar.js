@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 
@@ -95,7 +96,7 @@ export const MenuBarraNav = styled.div`
         display: none;
     }
 `
-export const LinkButton = styled.div`
+export const LinkButton = styled(Link)`
     /* border: 1px solid red;//................ */
     padding: 12px;
     border-bottom: 2px solid transparent;
@@ -128,13 +129,10 @@ export const LinkButton = styled.div`
         transition: 400ms;
     }
     &:active{
-            transition: 100ms;
-            -webkit-box-shadow: 0px 0px 15px 0px #ffffff; 
-            box-shadow: 0px 0px 15px 0px #ffffff;
+            transition: 150ms;
+            -webkit-box-shadow: inset 0px 0px 15px 22px var(--color5); 
+            box-shadow: inset 0px 0px 15px 22px var(--color5);
         }
-    span{
-        
-    }
 `
 // simple dropdown menu whit hover effect
 export const DropdownContainer = styled.div`
