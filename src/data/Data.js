@@ -6,19 +6,19 @@ export const data = [{
         logoPrincipal :'logos/logo-principal-512.png',
     },
     about:{
-        name:'sobre mi',
+        name:'Sobre Mi',
 
     },
     skills:{
-        name:'conocimientos',
+        name:'Conocimientos',
 
     },
     work:{
-        name:'proyectos',
+        name:'Proyectos',
 
     },
     contact:{
-        name:'contacto',
+        name:'Contacto',
 
     }
 }]

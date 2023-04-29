@@ -14,6 +14,8 @@ import { Link } from 'react-router-dom';
 // import { HamburguerMenu } from '../styles/ResponsiveNavBar.js';
 import { ContenedorNavBar, Direcciones, LogoPrincipal } from '../styles/NavBar.js';
 import BasicMenu from './BasicMenu.jsx';
+import { HamburguerMenu } from '../styles/ResponsiveNavBar.js';
+import ResponsiveNavBar from './ResponsiveNavBar.jsx';
 // import ResponsiveNavBar from './ResponsiveNavBar.jsx';
 
 
@@ -47,9 +49,9 @@ const NavBar = () => {
                 <div>
                     <BasicMenu />
                 </div>
-                {/* <HamburguerMenu> */}
-                    {/* <ResponsiveNavBar /> */}
-                {/* </HamburguerMenu> */}
+                <HamburguerMenu>
+                    <ResponsiveNavBar />
+                </HamburguerMenu>
             </LogoPrincipal>
             
         </ContenedorNavBar>

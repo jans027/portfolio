@@ -1,12 +1,15 @@
-import React, { useRef } from 'react';
+import React from 'react';
 //styles
-import { DropdownButton, DropdownContainer, DropdownContent, LinkButton, MenuBarraNav } from '../styles/NavBar';
+import { LinkButton, MenuBarraNav } from '../styles/NavBar';
+//import data
 import { data } from '../data/Data';
 
 
 function BasicMenu() {
 
+    //get data
     const [datos] = data
+    // destructuring data
     const { about, skills, work, contact } = datos
 
     return (

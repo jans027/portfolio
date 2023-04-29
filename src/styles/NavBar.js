@@ -76,14 +76,23 @@ export const LogoPrincipal = styled.div`
         cursor: pointer;
     }
     @media (max-width:1050px) {
-        width: 100%;
+        width: 90%;
         justify-content:space-between;
         padding: 0 1.2em;
     }
     img{
-        /* border: 1px solid red;//................. */
+        border: 4px solid transparent;//.................
+        border-radius: 50%;
         width:3em;
         height: auto;
+        &:hover{
+            transition: 350ms;
+            border: 4px solid var(--color5);//.................
+        }
+        &:active{
+            transition: 50ms;
+            border: 4px solid var(--color4);//.................
+        }
     }
 `
 export const MenuBarraNav = styled.div`
@@ -114,14 +123,14 @@ export const LinkButton = styled(Link)`
         content: "";
         position: absolute;
         width: 100%;
-        height: 2px;
+        height: 4px;
         border-radius: 4px;
         background-color: var(--color4);
         bottom: 0;
         left: 0;
         transform-origin: right;
         transform: scaleX(0);
-        transition: transform 0.3s ease-in-out;
+        transition: transform 300ms ease-in-out;
         }
     &:hover::before {
         transform-origin: left;
@@ -134,77 +143,3 @@ export const LinkButton = styled(Link)`
             box-shadow: inset 0px 0px 15px 22px var(--color5);
         }
 `
-// simple dropdown menu whit hover effect
-export const DropdownContainer = styled.div`
-    /* border: 1px solid red;//........... */
-    position: relative;
-    display: inline-block;
-    border-bottom: 2px solid transparent;
-    //animation border bottom
-    &::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        border-radius: 4px;
-        background-color: var(--secundario);
-        bottom: 0;
-        left: 0;
-        transform-origin: right;
-        transform: scaleX(0);
-        transition: transform 0.3s ease-in-out;
-        }
-    &:hover::before {
-        transform-origin: left;
-        transform: scaleX(1);
-    }
-
-    &:hover .dropdown-content {
-        display: block;
-    }
-`;
-export const DropdownButton = styled.button`
-    /* border: 1px solid red;//........... */
-    background-color: transparent;
-    color: var(--color1);
-    padding: 12px;
-    font-size: 16px;
-    font-weight: 700;
-    border: none;
-    cursor: pointer;
-    &:hover {
-        color:var(--basico);
-    }
-`;
-export const DropdownContent = styled.div`
-    /* border: 1px solid red;//........... */
-    display: none;
-    position: absolute;
-    z-index: 1;
-    top: 50px;
-    background-color: var(--basico);
-    min-width: 290px;
-    div{
-        /* border: 1px solid red;//............... */
-        display: flex;
-        flex-direction: column;
-        a{
-            width: 100%;
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: 700;
-            padding: 10px;
-            color:var(--terciario);
-            border-bottom: 2px solid transparent;
-            // animation hover
-            box-shadow: inset 0 0 0 0 white;
-            transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-            &:hover{
-                transition: 1s;
-                border-bottom: 2px solid var(--secundario);
-                /* background-color: var(--terciario40); */
-                box-shadow: inset 300px 0 0 0 var(--terciario40);
-            }
-        }
-    }
-`;
