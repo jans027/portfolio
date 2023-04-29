@@ -4,15 +4,16 @@ import { data } from '../data/Data.js';
 //import react router dom
 import { Link } from 'react-router-dom';
 //import components
-import BasicMenu from './BasicMenu.jsx';
-import ResponsiveNavBar from './ResponsiveNavBar.jsx';
+// import BasicMenu from './BasicMenu.jsx';
+// import ResponsiveNavBar from './ResponsiveNavBar.jsx';
 //import material ui
 // import PhoneIcon from '@mui/icons-material/Phone';
 // import PhonelinkRingIcon from '@mui/icons-material/PhonelinkRing';
 // import PlaceIcon from '@mui/icons-material/Place';
 //styles
-import { ContenedorNavBar, Direcciones, Direcciones1, LogoPrincipal, LogosRedes } from '../styles/NavBar.js';
-import { HamburguerMenu } from '../styles/ResponsiveNavBar.js';
+// import { HamburguerMenu } from '../styles/ResponsiveNavBar.js';
+import { ContenedorNavBar, Direcciones, LogoPrincipal } from '../styles/NavBar.js';
+import BasicMenu from './BasicMenu.jsx';
 // import ResponsiveNavBar from './ResponsiveNavBar.jsx';
 
 
@@ -44,11 +45,11 @@ const NavBar = () => {
             <LogoPrincipal>
                 <Link to="/"> <img src={require(`../images/${logoPrincipal}`)} alt={logoPrincipal}/> </Link>
                 <div>
-                    {/* <BasicMenu /> */}
+                    <BasicMenu />
                 </div>
-                <HamburguerMenu>
+                {/* <HamburguerMenu> */}
                     {/* <ResponsiveNavBar /> */}
-                </HamburguerMenu>
+                {/* </HamburguerMenu> */}
             </LogoPrincipal>
             
         </ContenedorNavBar>

@@ -7,7 +7,7 @@ export const ContenedorNavBar = styled.nav`
     z-index: 100;
     width: 100%;
     height: 100px;
-    background: var(--basico);
+    background: var(--color2);
     display: flex;
     flex-direction: column;
 `
@@ -67,7 +67,7 @@ export const LogoPrincipal = styled.div`
     /* border: 1px solid red;//................. */
     display: flex;
     align-items: flex-end;
-    justify-content:center;
+    justify-content:space-between;
     width: 95%;
     margin: auto;
     padding-bottom: 1em;
@@ -81,7 +81,7 @@ export const LogoPrincipal = styled.div`
     }
     img{
         /* border: 1px solid red;//................. */
-        width: 8.125em;
+        width:3em;
         height: auto;
     }
 `
@@ -101,13 +101,21 @@ export const LinkButton = styled.div`
     border-bottom: 2px solid transparent;
     //animation border bottom
     position: relative;
+    color:var(--color4);
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    &:hover {
+        transition: 400ms;
+        color:var(--basico);
+    }
     &::before {
         content: "";
         position: absolute;
         width: 100%;
         height: 2px;
         border-radius: 4px;
-        background-color: var(--secundario);
+        background-color: var(--color4);
         bottom: 0;
         left: 0;
         transform-origin: right;
@@ -117,16 +125,15 @@ export const LinkButton = styled.div`
     &:hover::before {
         transform-origin: left;
         transform: scaleX(1);
+        transition: 400ms;
     }
-    a{
-        color:var(--secundario);
-        font-size: 16px;
-        font-weight: 700;
-        text-decoration: none;
-        &:hover {
-            transition: 5ms;
-            color:var(--terciario);
+    &:active{
+            transition: 100ms;
+            -webkit-box-shadow: 0px 0px 15px 0px #ffffff; 
+            box-shadow: 0px 0px 15px 0px #ffffff;
         }
+    span{
+        
     }
 `
 // simple dropdown menu whit hover effect
@@ -161,14 +168,14 @@ export const DropdownContainer = styled.div`
 export const DropdownButton = styled.button`
     /* border: 1px solid red;//........... */
     background-color: transparent;
-    color: var(--secundario);
+    color: var(--color1);
     padding: 12px;
     font-size: 16px;
     font-weight: 700;
     border: none;
     cursor: pointer;
     &:hover {
-        color:var(--terciario);
+        color:var(--basico);
     }
 `;
 export const DropdownContent = styled.div`
