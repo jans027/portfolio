@@ -1,10 +1,52 @@
 
 
-
 export const data = [{
     inicio:{
         logoPrincipal :'logos/logo-principal-512.png',
-
+        titleHome:{
+            word:'H',
+            word1:'o',
+            word2:'l',
+            word3:'a',
+            word4:',',
+        },
+        titleHome2:{
+            word5:'M',
+            word6:'e',
+            word19:'_',
+            word7:'L',
+            word8:'l',
+            word9:'a',
+            word10:'m',
+            word11:'o',
+            word20:'_',
+            word12:'J',
+            word13:'u',
+            word14:'l',
+            word15:'i',
+            word16:'a',
+            word17:'n',
+            word18:',',
+        },
+        titleHome3:{
+            word19:'D',
+            word20:'e',
+            word21:'s',
+            word22:'a',
+            word23:'r',
+            word24:'r',
+            word25:'o',
+            word26:'l',
+            word27:'l',
+            word28:'a',
+            word29:'d',
+            word30:'o',
+            word31:'r',
+            word35:'_',
+            word32:'W',
+            word33:'e',
+            word34:'b',
+        }
     },
     about:{
         url:'/sobre-mi',

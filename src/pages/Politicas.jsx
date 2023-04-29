@@ -38,7 +38,6 @@ const Politicas = () => {
                     card.map((item) =>
                         <CardPol key={item.id}>
                             <p className='Text_1'>{item.text0}</p>
-                            {/* <p className='Text_2'>{item.text1}</p> */}
                             <p className='Text_2'>{item.text1.split('\n').map((line, i) => {
                                 return (
                                     <React.Fragment key={i}>
