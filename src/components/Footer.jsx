@@ -22,11 +22,11 @@ const Footer = () => {
                 <p className='text_2'>&nbsp; Todos los derechos reservados.</p>
             </ItemFooter>
             <ItemFooter>
-                <Link to='/'>{politica.name}</Link>
+                <Link to={politica.url}>{politica.name}</Link>
             </ItemFooter>
             <ItemFooter>
-                <Link className='Logo' to='/'><GitHubIcon/></Link>
-                <Link className='Logo' to='/'><LinkedInIcon/></Link>
+                <Link target='_blank' className='Logo' to='/'><GitHubIcon/></Link>
+                <Link target='_blank' className='Logo' to='/'><LinkedInIcon/></Link>
             </ItemFooter>
         </ContFooter>
     )

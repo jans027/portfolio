@@ -5,7 +5,7 @@ import { vibrate } from "./ResponsiveNavBar";
 export const ContFooter = styled.footer`
     /* border: 1px solid red;//.................. */
     background-color: var(--color2);
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     height: 80px;
