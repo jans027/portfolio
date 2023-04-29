@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Spin = keyframes`
     100% {transform: rotate(360deg);}
 `
-const vibrate = keyframes`
+export const vibrate = keyframes`
     0% {
         transform: translate(0);
     }

@@ -20,5 +20,8 @@ export const data = [{
     contact:{
         name:'Contacto',
 
+    },
+    politica:{
+        name:'Politica de Privacidad',
     }
 }]
