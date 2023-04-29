@@ -15,10 +15,10 @@ function BasicMenu() {
     return (
         <MenuBarraNav>
 
-            <LinkButton to='#'>{about.name}</LinkButton>
-            <LinkButton to='#'>{skills.name}</LinkButton>
-            <LinkButton to='#'>{work.name}</LinkButton>
-            <LinkButton to='#'>{contact.name}</LinkButton>
+            <LinkButton to={about.url}>{about.name}</LinkButton>
+            <LinkButton to={skills.url}>{skills.name}</LinkButton>
+            <LinkButton to={work.url}>{work.name}</LinkButton>
+            <LinkButton to={contact.url}>{contact.name}</LinkButton>
 
         </MenuBarraNav>
     );

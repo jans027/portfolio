@@ -28,7 +28,7 @@ const Politicas = () => {
     return (
         <>
             <Helmet>
-                <title>Desarrollador Web - Política de Protección de Datos Personales</title>
+                <title>Política de Protección de Datos Personales</title>
                 {/* <meta name="description" content="Helmet application" /> */}
                 <h1>{name}</h1>
             </Helmet>

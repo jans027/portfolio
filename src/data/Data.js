@@ -4,20 +4,25 @@
 export const data = [{
     inicio:{
         logoPrincipal :'logos/logo-principal-512.png',
+
     },
     about:{
+        url:'/sobre-mi',
         name:'Sobre Mi',
 
     },
     skills:{
+        url:'/conocimientos',
         name:'Conocimientos',
 
     },
     work:{
+        url:'/proyectos',
         name:'Proyectos',
 
     },
     contact:{
+        url:'/contacto',
         name:'Contacto',
 
     },

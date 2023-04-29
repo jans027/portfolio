@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { vibrate } from "./ResponsiveNavBar";
+import { vibrate } from "./Resourses";
 
 
 export const ContFooter = styled.footer`
