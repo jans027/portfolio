@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { ContText, TitleH, WordsH } from '../styles/Home'
+import { AuxText, ContText, TitleH, WordsH } from '../styles/Home'
 import { data } from '../data/Data'
 
 const TitleHome = () => {
@@ -7,7 +7,7 @@ const TitleHome = () => {
     //get data
     const [datos] = data;
     //ddestructuring data
-    const { inicio: { titleHome, titleHome2, titleHome3 } } = datos;
+    const { inicio: { titleHome, titleHome2, titleHome3, paragraphHome } } = datos;
     const words = Object.values(titleHome);
     const words2 = Object.values(titleHome2);
     const words3 = Object.values(titleHome3);
@@ -56,6 +56,14 @@ const TitleHome = () => {
                 className={change? 'class1 animate': 'class1'}
                 key={index}>{item}</WordsH>)}
             </TitleH>
+            <AuxText>{paragraphHome.split('\n').map((line, i) => {
+                return (
+                    <React.Fragment key={i}>
+                        {line}
+                        <br />
+                    </React.Fragment>
+                )
+            })}</AuxText>
         </ContText>
     )
 }

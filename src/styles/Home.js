@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { WordsAnimation, WordsAnimation2, color1, vibrate } from "./Resourses";
+import { WordsAnimation, WordsAnimation2 } from "./Resourses";
 
 export const ContText = styled.section`
     /* border: 1px solid red;//................. */
     position:absolute;
-    top: 25%;
+    top: 20%;
     left: 3%;
 
 `
@@ -33,4 +33,11 @@ export const WordsH = styled.div`
     }
     }
     
+`
+export const AuxText = styled.p`
+    color: var(--color7);
+    width: 90%;
+    max-width: 1000px;
+    font-size: clamp(18px, 2vw, 25px);
+    margin-bottom: 3em;
 `

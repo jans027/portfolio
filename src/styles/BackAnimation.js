@@ -15,7 +15,7 @@ export const ContInside = styled.div`
     position: relative;
     min-width: 960px;
     max-width: 1280px;
-    height: 95vh;
+    height: max-content;
     min-height: 100%;
     margin: 0px auto;
     padding: 0px auto;

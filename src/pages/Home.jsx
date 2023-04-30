@@ -2,10 +2,9 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import BackAnimation from '../components/BackAnimation'
 import TitleHome from '../components/TitleHome'
+import { data } from '../data/Data'
 
 const Home = () => {
-    
-
 
     return (
         <>
@@ -14,8 +13,9 @@ const Home = () => {
                 {/* <meta name="description" content="Helmet application" /> */}
                 <h1>Desarrollador Web</h1>
             </Helmet>
-            <BackAnimation/>
-            <TitleHome/>
+            <BackAnimation />
+            <TitleHome />
+            
         </>
     )
 }
