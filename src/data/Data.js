@@ -60,12 +60,72 @@ export const data = [{
             p5:'En mi tiempo libre, también me dedico a aprender y experimentar con nuevas tecnologías, lo que me mantiene actualizado en las últimas tendencias en desarrollo web.',
             p6:' Ademas he trabajado con diferentes lenguajes de programación como JavaScript, PHP, HTML, CSS, React.Js.',
         }
-
-
     },
     skills:{
         url:'/conocimientos',
         name:'Conocimientos',
+        subTitle1:'Estas son, algunas de las tecnologías que utilizo para crear aplicaciones del lado del cliente',
+        subTitle2:'Estas son, tegnologias complementarias',
+        front:{
+            card0:{
+                name:'HTML 5',
+                img:'logos/html-5.png',
+            },
+            card1:{
+                name:'CSS 3',
+                img:'logos/css-3.png',
+            },
+            card2:{
+                name:'SASS',
+                img:'logos/sass.png',
+            },
+            card3:{
+                name:'Bootstrap 5',
+                img:'logos/bootstrap-5.png',
+            },
+            card4:{
+                name:'JavaScript ',
+                img:'logos/javascript.png',
+            },
+            card5:{
+                name:'React Js',
+                img:'logos/logo192.png',
+            },
+            card6:{
+                name:'Material Ui',
+                img:'logos/material-ui.svg',
+            },
+            card7:{
+                name:'Styled Components',
+                img:'logos/styled-components.png',
+            },
+        },
+        others:{
+            card0:{
+                name:'NodeJs',
+                img:'logos/nodejs.png',
+            },
+            card1:{
+                name:'Git',
+                img:'logos/git.png',
+            },
+            card2:{
+                name:'GitHub',
+                img:'logos/github.png',
+            },
+            card3:{
+                name:'Zombie',
+                img:'logos/zombie.png',
+            },
+            card4:{
+                name:'Ubuntu 22',
+                img:'logos/ubuntu.png',
+            },
+            card5:{
+                name:'Linux',
+                img:'logos/linux.png',
+            },
+        }
 
     },
     work:{
