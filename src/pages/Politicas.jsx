@@ -13,15 +13,21 @@ const Politicas = () => {
     const card = Object.values(cards);
 
     //...handle animation when the window is loaded..........
-
-    function cambiarClase() {
-        const elemento = document.querySelector('#element');
-        elemento.classList.remove('clase-1');
-        elemento.classList.add('clase-2');
-    }
-
+    const[change, setChange] = useState(false)
     useEffect(() => {
-        window.onload = cambiarClase;
+        // Obtener el elemento que se animará
+        const animatedElement = document.getElementById('element');
+
+        window.onload = setChange(true);
+    
+        // Agregar la clase para activar la animación
+        animatedElement.classList.add('animate');
+    
+        // Eliminar la clase después de 1 segundo
+        setTimeout(() => {
+            animatedElement.classList.remove('animate');
+            setChange(false)
+        }, 1000);
     }, []);
     //...................................
 
@@ -33,7 +39,7 @@ const Politicas = () => {
                 <h1>{name}</h1>
             </Helmet>
             <ContPrincipal>
-                <TitlePol id='element' className='clase-1'>{name}</TitlePol>
+                <TitlePol id='element' className={change? 'class1 animate': 'class1'}>{name}</TitlePol>
                 {
                     card.map((item) =>
                         <CardPol key={item.id}>

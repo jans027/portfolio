@@ -52,6 +52,15 @@ export const data = [{
     about:{
         url:'/sobre-mi',
         name:'Sobre Mi',
+        text:{
+            p1:'Desde que inicie mi camino en el desarrolllo web FrontEnd hace casi 3 años e tomado varios cursos de programación y desarrollo web en línea para complementar mi formación. Siendo uno de los mas destacados el curso realizado con Mision Tic y la Universidad Sergio Arboleda, en el que logre obtener diversos certificados en los cuales se encuentran:',
+            p2:' - Habilidades en programacion con enfasis en Aplicaciones Web.\n- Fundamentos de programacion con Python.',
+            p3:' Adicional a esto en 2022 ingrese al Bootcamp de Academia Geek , en el cual durante 5 meses curse y aprobe el entrenamiento en Desarrollo Web con enfasis en React.js en el cual aprendi:',
+            p4:' - Uso y configuración de sistemas de control de versiones, Git y GitHub. \n- Desarrollo de páginas web responsivas haciendo uso de marcos de trabajo y preprocesadores. \n- Identificación de componentes al analizar las interfaces a maquetar. \n- Maquetación haciendo uso de HTML, CSS de acuerdo a las condiciones y restricciones del área de \n- Diseño o especificaciones del cliente final. \n- Habilidad de trabajo en equipo por medio de metodologías ágiles de desarrollo de software y trabajo por medio de SCRUM.\n- Manipulación de NPM (Node Package Manager) y el entorno de NodeJs. \n- Realizar aplicaciones FrontEnd haciendo uso de ReactJs Básico - Intermedio.',
+            p5:'En mi tiempo libre, también me dedico a aprender y experimentar con nuevas tecnologías, lo que me mantiene actualizado en las últimas tendencias en desarrollo web.',
+            p6:' Ademas he trabajado con diferentes lenguajes de programación como JavaScript, PHP, HTML, CSS, React.Js.',
+        }
+
 
     },
     skills:{

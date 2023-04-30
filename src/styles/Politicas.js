@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { vibrate } from "./Resourses";
+import { WordsAnimation } from "./Resourses";
 
 
 export const ContPrincipal = styled.section`
@@ -10,8 +10,8 @@ export const ContPrincipal = styled.section`
     width: 90%;
     max-width: 1200px;
     margin: auto;
-    .clase-2 {
-        animation: ${vibrate} 400ms ease-out 500ms;
+    .animate{
+        animation: ${WordsAnimation} 400ms ease-out 500ms;
     }
 `
 export const TitlePol = styled.p`
