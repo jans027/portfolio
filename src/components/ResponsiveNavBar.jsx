@@ -42,7 +42,7 @@ function ResponsiveNavBar() {
                     <ButtonCloseModal onClick={handleClose}><CloseIcon /></ButtonCloseModal>
                 </Offcanvas.Header>
                 <ContText>
-                    <AccordionFooter onClick={handleClose} to='/'>
+                    <AccordionFooter onClick={handleClose} to={about.url}>
                         <AccordionDetails>
                             <EnlaceDesplegable>
                                 <span>{about.name}</span>
@@ -50,7 +50,7 @@ function ResponsiveNavBar() {
                         </AccordionDetails>
                     </AccordionFooter>
 
-                    <AccordionFooter onClick={handleClose} to='/'>
+                    <AccordionFooter onClick={handleClose} to={skills.url}>
                         <AccordionDetails>
                             <EnlaceDesplegable>
                                 <span>{skills.name}</span>
@@ -58,7 +58,7 @@ function ResponsiveNavBar() {
                         </AccordionDetails>
                     </AccordionFooter>
 
-                    <AccordionFooter onClick={handleClose} to='/'>
+                    <AccordionFooter onClick={handleClose} to={work.url}>
                         <AccordionDetails>
                             <EnlaceDesplegable>
                                 <span>{work.name}</span>
@@ -66,7 +66,7 @@ function ResponsiveNavBar() {
                         </AccordionDetails>
                     </AccordionFooter>
 
-                    <AccordionFooter onClick={handleClose} to='/'>
+                    <AccordionFooter onClick={handleClose} to={contact.url}>
                         <AccordionDetails>
                             <EnlaceDesplegable>
                                 <span>{contact.name}</span>

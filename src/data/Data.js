@@ -47,7 +47,7 @@ export const data = [{
             word33:'e',
             word34:'b',
         },
-        paragraphHome:'Soy un desarrollador Front-End ubicado en Bogotá, Colombia. \nMe apasionan los efectos de interfaz de usuario, las animaciones y la creación de experiencias de usuario intuitivas y dinámicas.\n\nPersona bien organizada, solucionador de problemas, empleado independiente con gran atención al detalle. Interesado en todo el espectro frontend y en trabajar en proyectos ambiciosos con gente positiva.\n\nHagamos algo especial.',
+        paragraphHome:'Soy un desarrollador Front-End ubicado en Bogotá, Colombia. \nMe apasionan los efectos de interfaz de usuario, las animaciones y la creación de experiencias de usuario intuitivas y dinámicas.\n\nSoy una persona organizada, solucionador de problemas, empleado independiente con gran atención al detalle. Interesado en todo el espectro frontend y en trabajar en proyectos ambiciosos con gente positiva.\n\nHagamos algo especial.',
     },
     about:{
         url:'/sobre-mi',

@@ -24,9 +24,14 @@ export const TitleH = styled.p`
 `
 export const WordsH = styled.div`
     /* border: 1px solid red;//....... */
-    &:hover{
-        /* transition:all 100ms ease-in-out; */
+    &:nth-child(5n-1){
         color: var(--color7);
+    }
+    &:hover{
+        color: var(--color7);
+        &:nth-child(5n-1){
+        color: var(--basico);
+        }
         animation: ${WordsAnimation} 600ms ease-out ;
         &:nth-child(odd){
         animation: ${WordsAnimation2} 600ms ease-out ;
@@ -35,7 +40,7 @@ export const WordsH = styled.div`
     
 `
 export const AuxText = styled.p`
-    color: var(--color7);
+    color: var(--basico);
     width: 90%;
     max-width: 1000px;
     font-size: clamp(18px, 2vw, 25px);

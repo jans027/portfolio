@@ -2,7 +2,6 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import BackAnimation from '../components/BackAnimation'
 import TitleHome from '../components/TitleHome'
-import { data } from '../data/Data'
 
 const Home = () => {
 
