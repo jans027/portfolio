@@ -1,7 +1,9 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { data } from '../data/Data'
-import { ContSobreMi, Text1S, TitleSobreMi } from '../styles/SobreMi'
+import { ContAnimation, ContSobreMi, Text1S, TitleSobreMi } from '../styles/SobreMi'
+import styled from 'styled-components'
+import { changeColor } from '../styles/Resources2'
 
 const SobreMi = () => {
 
@@ -21,6 +23,9 @@ const SobreMi = () => {
     const parts3 = p6.split(boldtWord3);
     //......................................................
 
+    const Span1 = styled.span`
+        animation: ${changeColor} 5000ms ease-out 1ms;
+    `
 
     return (
         <>
@@ -29,44 +34,54 @@ const SobreMi = () => {
                 {/* <meta name="description" content="Helmet application" /> */}
                 <h1>{name}</h1>
             </Helmet>
-            <ContSobreMi>
-                <TitleSobreMi>{name}</TitleSobreMi>
-                <Text1S>
-                    {parts1[0]}
-                    <span style={{ fontWeight: 'bold', color: '#32c2f1', fontSize: '20px' }}>{boldtWord1}</span>
-                    {parts1[1]}
-                </Text1S>
-                <Text1S>{p2.split('\n').map((line, i) => {
-                    return (
-                        <React.Fragment key={i}>
-                            {line}
-                            <br />
-                        </React.Fragment>
-                    )
-                })}</Text1S>
-                <Text1S>
-                    {parts2[0]}
-                    <span style={{ fontWeight: 'bold', color: '#32c2f1', fontSize: '20px' }}>{boldtWord2}</span>
-                    {parts2[1]}
-                </Text1S>
-                <Text1S>{p4.split('\n').map((line, i) => {
-                    return (
-                        <React.Fragment key={i}>
-                            {line}
-                            <br />
-                        </React.Fragment>
-                    )
-                })}</Text1S>
-                <Text1S>
-                    {p5}
-                </Text1S>
-                <Text1S>
-                    {parts3[0]}
-                    <span style={{ fontWeight: 'bold', color: '#32c2f1', fontSize: '20px' }}>{boldtWord3}</span>
-                    {parts3[1]}
-                </Text1S>
-            </ContSobreMi>
-
+            <ContAnimation>
+                <ContSobreMi>
+                    <TitleSobreMi>{name}</TitleSobreMi>
+                    <Text1S>
+                        {parts1[0]}
+                        <Span1 
+                        classname='animation1' 
+                        style={{ fontWeight: 'bold', color: '#32c2f1', fontSize: '20px' }}>
+                            {boldtWord1}</Span1>
+                        {parts1[1]}
+                    </Text1S>
+                    <Text1S>{p2.split('\n').map((line, i) => {
+                        return (
+                            <React.Fragment key={i}>
+                                {line}
+                                <br />
+                            </React.Fragment>
+                        )
+                    })}</Text1S>
+                    <Text1S>
+                        {parts2[0]}
+                        <Span1 
+                        classname='animation1' 
+                        style={{ fontWeight: 'bold', color: '#32c2f1', fontSize: '20px' }}>
+                            {boldtWord2}</Span1>
+                        {parts2[1]}
+                    </Text1S>
+                    <Text1S>{p4.split('\n').map((line, i) => {
+                        return (
+                            <React.Fragment key={i}>
+                                {line}
+                                <br />
+                            </React.Fragment>
+                        )
+                    })}</Text1S>
+                    <Text1S>
+                        {p5}
+                    </Text1S>
+                    <Text1S>
+                        {parts3[0]}
+                        <Span1 
+                        classname='animation1' 
+                        style={{ fontWeight: 'bold', color: '#32c2f1', fontSize: '20px' }}>
+                            {boldtWord3}</Span1>
+                        {parts3[1]}
+                    </Text1S>
+                </ContSobreMi>
+            </ContAnimation>
         </>
     )
 }

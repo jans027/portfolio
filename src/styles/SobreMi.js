@@ -1,9 +1,18 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import { LastAnim } from "./Resources2";
 
 
+
+export const ContAnimation = styled.section`
+    width: 100%;
+    height: 100%;
+    background: rgb(35,39,47);
+    background: radial-gradient(circle, rgba(35,39,47,1) 0%, rgba(94,94,94,1) 0%, rgba(35,39,47,1) 42%); 
+`
 export const ContSobreMi = styled.section`
-    border: 1px solid red;//.............
+    /* border: 1px solid red;//............. */
     padding-top: 150px ;
+    padding-bottom: 50px ;
     width: 90%;
     max-width: 1200px;
     margin: auto;
@@ -13,6 +22,7 @@ export const TitleSobreMi = styled.section`
     font-weight: 900;
     font-family: var(--font1);
     color: var(--color7);
+    animation: ${LastAnim} 1000ms ease-out 100ms;
 `
 export const Text1S = styled.p`
     color: var(--basico);

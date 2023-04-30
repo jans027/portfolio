@@ -6,7 +6,7 @@ export const Spin = keyframes`
 `
 export const color1 = keyframes`
     0% {color:var(--color7)}
-    100% {color:var(--basico1)}
+    100% {color:var(--basico)}
 `
 export const vibrate = keyframes`
     0% {
