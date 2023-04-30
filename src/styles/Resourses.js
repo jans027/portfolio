@@ -4,6 +4,10 @@ import styled, { keyframes } from "styled-components";
 export const Spin = keyframes`
     100% {transform: rotate(360deg);}
 `
+export const color1 = keyframes`
+    0% {color:var(--color7)}
+    100% {color:var(--basico1)}
+`
 export const vibrate = keyframes`
     0% {
         transform: translate(0);
