@@ -140,6 +140,9 @@ export const data = [{
     contact:{
         url:'/contacto',
         name:'Contacto',
+        card:{
+            
+        }
 
     },
     politica:{

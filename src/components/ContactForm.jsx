@@ -5,7 +5,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 // consecutive number
 import { v4 as uuidv4 } from 'uuid';
-import { data } from '../data/Data';
 import { BtnFormContact, FormContact, TextArea } from '../styles/Contacto';
 
 
@@ -20,13 +19,7 @@ const ContactForm = (props) => {
     // ...dinamic class name
     const [classAlert0, setClassAlert0] = useState('form_input')
     const [classAlert1, setClassAlert1] = useState('form_input')
-    const [classAlert2, setClassAlert2] = useState('form_input')
     const [classAlert3, setClassAlert3] = useState('form_input')
-
-    // ...avoid copy & paste action
-    const handleCutCopyPaste = (event) => {
-        event.preventDefault();
-    };
 
     //...clean form after send form
     const formRef = useRef();
@@ -50,7 +43,6 @@ const ContactForm = (props) => {
     const handleFocus = () => {
         setClassAlert0('form_input')
         setClassAlert1('form_input')
-        setClassAlert2('form_input')
         setClassAlert3('form_input')
         setErrorName(false)
         setErrorAsunto(false)
@@ -125,13 +117,9 @@ const ContactForm = (props) => {
                         `
                         Nombre : ${dataForm.name}
                         <br><br>
-                        Numero de Cedula : ${dataForm.cedula}
-                        <br><br>
-                        Telefono : ${dataForm.phone}
-                        <br><br>
                         E-Mail : ${dataForm.email}
                         <br><br>
-                        Solicitud : ${dataForm.seleccion}
+                        Asunto: ${dataForm.asunto}
                         <br><br>
                         Comentario : ${dataForm.comentario}
                     `
