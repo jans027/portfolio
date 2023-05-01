@@ -65,7 +65,7 @@ export const sliderShape = keyframes`
     }
 `
 export const animationTextCard = keyframes`
-    0%{opacity: 0.1;}
+    0%{opacity: 0.1;transform: translate(-30%);}
     10%{opacity: 0.2;}
     30%{opacity: 0.3;}
     40%{opacity: 0.4;}
@@ -74,5 +74,5 @@ export const animationTextCard = keyframes`
     70%{opacity: 0.7;}
     80%{opacity: 0.9;}
     90%{opacity: 0.9;}
-    100%{opacity: 1;}
+    100%{opacity: 1;transform: translate(10%);}
 `
