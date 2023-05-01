@@ -30,3 +30,37 @@ export const changeColor = keyframes`
     50% {color:var(--color4)}
     100% {color:var(--color7)}
 `
+export const sliderShape2 = keyframes`
+    0%,100%{
+        border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+        transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    34%{
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+        transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+    }
+    50%{
+        transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    67%{
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+        transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+    }
+`
+export const sliderShape = keyframes`
+    0%,100%{
+        border-radius: 90% 50% 50% 90% / 90% 90% 50% 50% ;
+        transform: translate3d(5px,0,0) rotateZ(0.05deg);
+    }
+    34%{
+        border-radius: 20% 19% 61% 60% / 60% 20% 36% 44%;
+        transform:  translate3d(0,5px,0) rotateZ(0.05deg);
+    }
+    50%{
+        transform: translate3d(0,0,0) rotateZ(0.05deg);
+    }
+    67%{
+        border-radius: 32% 48% 60% 20% / 35% 35% 45% 45%;
+        transform: translate3d(0,-3px,0) rotateZ(0.05deg);
+    }
+`

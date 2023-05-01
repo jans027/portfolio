@@ -1,7 +1,7 @@
 import React from 'react'
 import { data } from '../data/Data'
 import { Helmet } from 'react-helmet'
-import { CardsC, ContAniCon, ContCardsC, ContConoc, ContImgC, SubTitleC, TitleConoc } from '../styles/Conocimientos'
+import { CardsC, ContAniCon, ContCardsC, ContConoc, ContImgC, SubTitleC, TextC, TitleConoc } from '../styles/Conocimientos'
 
 const Conocimientos = () => {
     //get data
@@ -32,7 +32,7 @@ const Conocimientos = () => {
                                         src={require(`../images/${item.img}`)}
                                         alt={`imagen ${name}`} />
                                     </ContImgC >
-                                    <p>{item.name}</p>
+                                    <TextC>{item.name}</TextC>
                                 </CardsC>
                             )
                         }
@@ -47,7 +47,7 @@ const Conocimientos = () => {
                                         src={require(`../images/${item.img}`)}
                                         alt={`imagen ${name}`} />
                                     </ContImgC >
-                                    <p>{item.name}</p>
+                                    <TextC>{item.name}</TextC>
                                 </CardsC>
                             )
                         }
