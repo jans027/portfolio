@@ -5,7 +5,7 @@ export const ContAnimation = styled.div`
     background: var(--color1);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00adef', endColorstr='#0076e5',GradientType=1 );
     position: relative;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     margin: 0px auto;
     padding: 0px auto;
@@ -16,7 +16,7 @@ export const ContInside = styled.div`
     position: relative;
     min-width: 100vh;
     max-width: 1280px;
-    height: 90vh;
+    height: 100vh;
     /* min-height: 100vh; */
     margin: 0px auto;
     padding: 0px auto;

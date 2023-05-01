@@ -10,10 +10,13 @@ export const ContAniCon = styled.section`
 export const ContConoc = styled.div`
     /* border: 1px solid red;//............. */
     padding-top: 150px ;
-    padding-bottom: 50px ;
+    padding-bottom: 7em;
     width: 80%;
     max-width: 1200px;
     margin: 0 auto 3em auto;
+    @media (max-width:500px) {
+        width: 90%;
+    }
 `
 export const TitleConoc = styled.p`
     font-size: clamp(40px, 6vw, 65px);

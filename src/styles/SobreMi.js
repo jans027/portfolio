@@ -12,7 +12,7 @@ export const ContAnimation = styled.section`
 export const ContSobreMi = styled.section`
     /* border: 1px solid red;//............. */
     padding-top: 150px ;
-    padding-bottom: 50px ;
+    padding-bottom: 7em;
     width: 90%;
     max-width: 1200px;
     margin: 0 auto 3em auto;
