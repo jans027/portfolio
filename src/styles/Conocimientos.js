@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { LastAnim, sliderShape, sliderShape2 } from "./Resources2";
+import { LastAnim, sliderShape2 } from "./Resources2";
 
 export const ContAniCon = styled.section`
     width: 100%;
@@ -36,15 +36,27 @@ export const ContCardsC = styled.div`
     margin: 1em 0;
 `
 export const CardsC = styled.div`
-    border: 1px solid var(--color3);
+    /* border: 1px solid var(--color3); */
     width: 12em;
     height: auto;
     margin: .5em;
+    border-radius: .5em;
+    background: rgb(76,77,79);
+    background: linear-gradient(180deg, 
+    rgba(76,77,79,0) 25%, rgba(76,77,79,0.6318181818181818) 31%, 
+    rgba(70,71,74,1) 33%, rgba(51,54,60,0.8068181818181819) 36%, 
+    rgba(35,39,47,1) 57%); 
+    @media (max-width:1100px) {
+        width: 9em;
+    }
+    @media (max-width:400px) {
+        width: 40%;
+    }
 `
 export const ContImgC = styled.div`
     content: "";
     width: 100%;
-    height: 200px;
+    height: 13em;
     background: var(--basico);
     border: 4px solid var(--color4);
     will-change: border-radius, transform, opacity;
@@ -54,6 +66,9 @@ export const ContImgC = styled.div`
     display: block;
     z-index: -1;
     overflow: hidden;
+    @media (max-width:1100px) {
+        height: 9em;
+    }
     img{
         width: 100%;
         object-fit:center;
@@ -61,7 +76,9 @@ export const ContImgC = styled.div`
     }
 `
 export const TextC = styled.p`
-    text-align: center;
-    font-size: clamp(14px, 2vw, 20px);
+    text-align: right;
+    font-size: clamp(20px, 2vw, 28px);
     color: var(--color7);
+    font-weight: 900;
+    margin-right:.5em;
 `
