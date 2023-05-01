@@ -7,7 +7,7 @@ export const ContenedorNavBar = styled.nav`
     position: fixed;
     z-index: 100;
     width: 100%;
-    height: 100px;
+    height: 6.2em;
     background: var(--color2);
     display: flex;
     flex-direction: column;

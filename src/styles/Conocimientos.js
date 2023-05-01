@@ -11,9 +11,9 @@ export const ContConoc = styled.div`
     /* border: 1px solid red;//............. */
     padding-top: 150px ;
     padding-bottom: 50px ;
-    width: 90%;
+    width: 80%;
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto 3em auto;
 `
 export const TitleConoc = styled.p`
     font-size: clamp(40px, 6vw, 65px);
@@ -37,9 +37,9 @@ export const ContCardsC = styled.div`
 `
 export const CardsC = styled.div`
     /* border: 1px solid var(--color3); */
-    width: 12em;
+    width: 10em;
     height: auto;
-    margin: .5em;
+    margin: .7em;
     border-radius: .5em;
     background: rgb(76,77,79);
     background: linear-gradient(180deg, 
@@ -56,7 +56,7 @@ export const CardsC = styled.div`
 export const ContImgC = styled.div`
     content: "";
     width: 100%;
-    height: 13em;
+    height: 11em;
     background: var(--basico);
     border: 4px solid var(--color4);
     will-change: border-radius, transform, opacity;
@@ -77,7 +77,7 @@ export const ContImgC = styled.div`
 `
 export const TextC = styled.p`
     text-align: right;
-    font-size: clamp(20px, 2vw, 28px);
+    font-size: clamp(16px, 2vw, 28px);
     color: var(--color7);
     font-weight: 900;
     margin-right:.5em;

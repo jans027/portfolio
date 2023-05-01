@@ -5,10 +5,11 @@ import { vibrate } from "./Resourses";
 export const ContFooter = styled.footer`
     /* border: 1px solid red;//.................. */
     background-color: var(--color2);
-    position: relative;
-    bottom: 0;
+    position: fixed;
+    bottom: 0!important;
+    left: 0;
     width: 100%;
-    height: 80px;
+    height: 5em;
     display: flex;
     justify-content: space-evenly;
     @media (max-width:700px) {

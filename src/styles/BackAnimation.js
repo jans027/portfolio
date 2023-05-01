@@ -5,18 +5,19 @@ export const ContAnimation = styled.div`
     background: var(--color1);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00adef', endColorstr='#0076e5',GradientType=1 );
     position: relative;
-    height: 95vh;
+    height: 90vh;
     width: 100%;
     margin: 0px auto;
     padding: 0px auto;
     overflow: hidden;
 `
 export const ContInside = styled.div`
+    /* border: 1px solid red;//................ */
     position: relative;
-    min-width: 960px;
+    min-width: 100vh;
     max-width: 1280px;
-    height: max-content;
-    min-height: 100%;
+    height: 90vh;
+    /* min-height: 100vh; */
     margin: 0px auto;
     padding: 0px auto;
     overflow: visible;

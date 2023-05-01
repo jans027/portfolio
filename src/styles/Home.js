@@ -4,14 +4,15 @@ import { WordsAnimation, WordsAnimation2 } from "./Resourses";
 export const ContText = styled.section`
     /* border: 1px solid red;//................. */
     position:absolute;
-    top: 20%;
-    left: 3%;
-
+    top: 7em;
+    left: 6%;
+    margin-bottom:6em;
+    padding-bottom: 7em;
 `
 export const TitleH = styled.p`
     /* border: 1px solid red;//................. */
     font-weight: 900;
-    font-size: clamp(30px, 6vw, 75px);
+    font-size: clamp(2em, 6vw, 4.5em);
     color: var(--basico);
     margin: 0;
     display: flex;
@@ -42,8 +43,8 @@ export const AuxText = styled.p`
     color: var(--basico);
     width: 90%;
     max-width: 1000px;
-    font-size: clamp(16px, 2vw, 25px);
-    margin-bottom: 3em;
+    font-size: clamp(1em, 2vw, 2em);
+    margin-bottom: 1em;
     &:nth-child(5n-1){
         /* color: var(--color7); */
     }
