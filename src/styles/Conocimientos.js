@@ -40,25 +40,40 @@ export const ContCardsC = styled.div`
 `
 export const CardsC = styled.div`
     /* border: 1px solid var(--color3); */
-    width: 10em;
+    width:20em;
     height: auto;
     margin: .7em;
+    display: flex;
+    justify-content: space-between;
     border-radius: .5em;
     background: rgb(76,77,79);
-    background: linear-gradient(180deg, 
-    rgba(76,77,79,0) 25%, rgba(76,77,79,0.6318181818181818) 31%, 
-    rgba(70,71,74,1) 33%, rgba(51,54,60,0.8068181818181819) 36%, 
-    rgba(35,39,47,1) 57%); 
-    @media (max-width:1100px) {
-        width: 9em;
-    }
-    @media (max-width:400px) {
-        width: 40%;
+    background: 
+            linear-gradient(93deg, rgba(76,77,79,0) 21%, 
+            rgba(76,77,79,0.6318181818181818) 31%, 
+            rgba(51,54,60,0.8068181818181819) 42%, 
+            rgba(35,39,47,1) 58%); 
+    
+    /* @media (max-width:700px) {
+        width:60%;
+    } */
+    @media (max-width:870px) {
+        width:90%;
+        &:nth-child(odd){
+        flex-direction: row-reverse;
+        background: rgb(76,77,79);
+        background: 
+            linear-gradient(267deg, 
+            rgba(76,77,79,0) 21%, 
+            rgba(76,77,79,0.6318181818181818) 31%, 
+            rgba(51,54,60,0.8068181818181819) 42%, 
+            rgba(35,39,47,1) 58%); 
+        }
     }
 `
 export const ContImgC = styled.div`
     content: "";
     width: 100%;
+    width: 11em;
     height: 11em;
     background: var(--basico);
     border: 4px solid var(--color4);
@@ -67,10 +82,15 @@ export const ContImgC = styled.div`
     animation: ${sliderShape2} 6s linear infinite;
     -webkit-animation: ${sliderShape2} 6s linear infinite;
     display: block;
-    z-index: -1;
+    /* z-index: -1; */
     overflow: hidden;
     @media (max-width:1100px) {
+        width: 9em;
         height: 9em;
+    }
+    @media (max-width:450px) {
+        width: 6em;
+        height: 6em;
     }
     img{
         width: 100%;
@@ -79,9 +99,16 @@ export const ContImgC = styled.div`
     }
 `
 export const TextC = styled.p`
-    text-align: right;
-    font-size: clamp(16px, 2vw, 28px);
+    /* border: 1px solid red;//.................... */
+    width: 50%;
+    text-align: end;
+    display: grid;
+    place-items: center;
+    font-size: clamp(20px, 2vw, 28px);
     color: var(--color7);
     font-weight: 900;
     margin-right:.5em;
+    @media (max-width:450px) {
+        text-align: center;
+    }
 `

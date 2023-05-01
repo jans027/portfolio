@@ -53,7 +53,6 @@ const Conocimientos = () => {
                         }
                     </ContCardsC >
                 </ContConoc>
-
             </ContAniCon>
 
         </>

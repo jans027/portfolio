@@ -125,6 +125,10 @@ export const data = [{
                 name:'Linux',
                 img:'logos/linux.png',
             },
+            card6:{
+                name:'Visual Studio Code',
+                img:'logos/visual.png',
+            },
         }
 
     },

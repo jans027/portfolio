@@ -1,6 +1,7 @@
 import React from 'react'
 import { data } from '../data/Data'
 import { Helmet } from 'react-helmet'
+import { ContProy, ContProyects, TitleProy } from '../styles/Proyectos'
 
 const Proyectos = () => {
     //get data
@@ -16,7 +17,13 @@ const Proyectos = () => {
                 {/* <meta name="description" content="Helmet application" /> */}
                 <h1>{name}</h1>
             </Helmet>
+            <ContProyects>
+                <ContProy>
+                <TitleProy>{name}</TitleProy>
 
+
+                </ContProy>
+            </ContProyects>
         </>
     )
 }
