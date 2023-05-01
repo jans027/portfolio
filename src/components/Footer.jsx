@@ -12,7 +12,9 @@ import { ItemFooter } from '../styles/Footer';
 
 const Footer = () => {
 
+    //get data
     const [datos] = data;
+    //destructuring data
     const { politica } = datos
 
     return (
