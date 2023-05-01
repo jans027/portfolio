@@ -27,8 +27,8 @@ const Footer = () => {
                 <Link to={politica.url}>{politica.name}</Link>
             </ItemFooter>
             <ItemFooter>
-                <Link target='_blank' className='Logo' to='/'><GitHubIcon/></Link>
-                <Link target='_blank' className='Logo' to='/'><LinkedInIcon/></Link>
+                <Link target='_blank' className='Logo' to='https://github.com/jans027'><GitHubIcon/></Link>
+                <Link target='_blank' className='Logo' to='https://www.linkedin.com/in/julian-sanabria-martinez/'><LinkedInIcon/></Link>
             </ItemFooter>
         </ContFooter>
     )

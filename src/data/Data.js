@@ -135,6 +135,28 @@ export const data = [{
     work:{
         url:'/proyectos',
         name:'Proyectos',
+        cards:{
+            card0:{
+                title:'Itic Colombia',
+                img:'work/iticco.png',
+                url:'https://www.iticco.com',
+            },
+            card1:{
+                title:'Faccel',
+                img:'work/faccel.png',
+                url:'',
+            },
+            card2:{
+                title:'Grupo Vtek',
+                img:'work/vtek.png',
+                url:'https://www.grupovtek.com',
+            },
+            card3:{
+                title:'Itic Peru',
+                img:'work/iticpe.png',
+                url:'https://iticpe.com',
+            }
+        }
 
     },
     contact:{
