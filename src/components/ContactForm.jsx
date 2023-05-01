@@ -6,6 +6,9 @@ import 'react-toastify/dist/ReactToastify.css';
 // consecutive number
 import { v4 as uuidv4 } from 'uuid';
 import { BtnFormContact, FormContact, TextArea } from '../styles/Contacto';
+//backdrop
+import Backdrop from '@mui/material/Backdrop';
+import CircularProgress from '@mui/material/CircularProgress';
 
 
 const ContactForm = (props) => {
@@ -50,6 +53,14 @@ const ContactForm = (props) => {
     };
     //.......................................
 
+    //..managment..backdrop..................
+    const [open, setOpen] = React.useState(false);
+    const handleClose = () => {
+        setOpen(false);
+    };
+    //.......................................
+
+
     const sendEmail = async (event) => {
         event.preventDefault();
 
@@ -59,7 +70,6 @@ const ContactForm = (props) => {
         // regex input name
         const nameRegex = /^[a-zA-ZñÑáéíóúÁÉÍÓÚ ]+$/;
         const isValidName = nameRegex.test(dataForm.name);
-        const isValidAsunto = nameRegex.test(dataForm.asunto);
 
         // ...regex input email
         const emailRegex = /^(([^<>() [\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -78,8 +88,7 @@ const ContactForm = (props) => {
         } else if ( //Asunto...........
             dataForm.asunto.trim() === "" ||
             dataForm.asunto === null ||
-            dataForm.asunto.length === 0 ||
-            isValidAsunto !== true
+            dataForm.asunto.length === 0
         ) {
             setClassAlert1('class_1');
             setErrorAsunto(true)
@@ -97,6 +106,8 @@ const ContactForm = (props) => {
 
         } else {
             // console.log(event.target.value)
+            setOpen(true);//open backdrop
+
 
             const url = SERVICE_URL;
             const Nombre = 'CONTACTO';
@@ -131,6 +142,7 @@ const ContactForm = (props) => {
                         return response.json()
                             .then(data =>
                                 // console.log(data),
+                                setOpen(false),// close backdrop
                                 formRef.current.reset(),// clean form
                                 toast.success('En breve nos pondremos en contacto contigo!', {// alert message
                                     position: "top-center",
@@ -146,6 +158,7 @@ const ContactForm = (props) => {
                             .catch(error => console.error(error));
                     } else {
                         // throw new Error('La petición ha fallado!')
+                        setOpen(false)// close backdrop
                         console.log(response.status)
                         toast.error('No se pudo Enviar tu solicitud, Intentalo mas tarde!', {// alert message
                             position: "top-center",
@@ -170,6 +183,15 @@ const ContactForm = (props) => {
 
     return (
         <FormContact>
+
+            <Backdrop
+                sx={{ color: '#ffffff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+                open={open}
+                onClick={handleClose}
+            >
+                <CircularProgress color="inherit" />
+            </Backdrop>
+
             <div className='cont_form_mail'>
                 <form ref={formRef} onSubmit={sendEmail}>
 
@@ -202,7 +224,7 @@ const ContactForm = (props) => {
 
                     <div className='firstBlock'>
                         <div className='asunto'>
-                            <LabelAsunto  className='form_label'>{isErrorAsunto === true ? 'Asunto No Valido' : 'Asunto'}<span>*</span></LabelAsunto>
+                            <LabelAsunto className='form_label'>{isErrorAsunto === true ? 'Asunto No Valido' : 'Asunto'}<span>*</span></LabelAsunto>
                             <input
                                 className={classAlert1}
                                 type="text"
