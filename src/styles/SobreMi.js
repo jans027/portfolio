@@ -22,7 +22,7 @@ export const TitleSobreMi = styled.section`
     font-weight: 900;
     font-family: var(--font1);
     color: var(--color7);
-    animation: ${LastAnim} 1000ms ease-out 100ms;
+    animation: ${LastAnim} 5000ms ease-out 500ms;
 `
 export const Text1S = styled.p`
     color: var(--basico);

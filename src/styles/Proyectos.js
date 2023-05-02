@@ -100,5 +100,8 @@ export const ContImgP = styled.div`
         width: 100%;
         object-fit: cover;
         object-position: center center;
+        @media (max-width:1000px) {
+            height: 100%;
+        }
     }
 `
