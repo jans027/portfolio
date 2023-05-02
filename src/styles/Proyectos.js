@@ -31,29 +31,23 @@ export const TitleProy = styled.p`
     animation: ${LastAnim} 1000ms ease-out 100ms;
 `
 export const ContCardsP = styled.div`
+    /* border: 1px solid red;//............. */
     display: flex;
     justify-content: center;
+    flex-direction: column;
     .animate{
         transition: 1500ms;
-        width: 50%;
+        width: 95%;
+        height: 50vh;
         border: 4px solid var(--color7);
-        @media (max-width:800px) {
-            width: 95%;
-            height: 50vh;
-        }
+        
     }
     .close{
         transition: 600ms;
-        width: 10%;
+        width: 95%;
+        height: 13em;
         border: 4px solid var(--color6);
-        @media (max-width:800px) {
-            width: 95%;
-            height: 100px;
-
-        }
-    }
-    @media (max-width:800px) {
-        flex-direction: column;
+        
     }
 `
 export const CardP = styled.div`
@@ -103,12 +97,8 @@ export const ContImgP = styled.div`
     border-radius: .8em;
     overflow: hidden;
     img{
-        height: 100%;
+        width: 100%;
         object-fit: cover;
         object-position: center center;
-        @media (max-width:800px) {
-            width: 100%;
-            
-        }
     }
 `
