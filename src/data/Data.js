@@ -144,7 +144,7 @@ export const data = [{
             card1:{
                 title:'Faccel',
                 img:'work/faccel.png',
-                url:'',
+                url:'https://www.faccel.com/',
             },
             card2:{
                 title:'Grupo Vtek',
