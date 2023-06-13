@@ -7,10 +7,14 @@ export const ContenedorNavBar = styled.nav`
     position: fixed;
     z-index: 100;
     width: 100%;
-    height: 6.2em;
+    height: 5em;
     background: var(--color2);
     display: flex;
     flex-direction: column;
+    opacity: 0.97;
+    @media (max-width:600px) {
+        height: 4em;
+    }
 `
 export const Direcciones = styled.div`
     /* border: 1px solid red;//..................... */
