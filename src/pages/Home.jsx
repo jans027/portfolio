@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <>
             <Helmet>
-                <title>Portfolio Desarrollador Web</title>
+                <title>Portfolio Tecnólogo en Desarrollo de Software,</title>
                 {/* <meta name="description" content="Helmet application" /> */}
                 <h1>Desarrollador Web</h1>
             </Helmet>

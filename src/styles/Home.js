@@ -3,6 +3,7 @@ import { WordsAnimation, WordsAnimation2 } from "./Resourses";
 
 export const ContText = styled.section`
     /* border: 1px solid red;//................. */
+    width: 90%;
     position:absolute;
     top: 7em;
     left: 6%;
@@ -12,7 +13,7 @@ export const ContText = styled.section`
 export const TitleH = styled.p`
     /* border: 1px solid red;//................. */
     font-weight: 900;
-    font-size: clamp(2em, 6vw, 4.5em);
+    font-size: clamp(1em, 4vw, 3.5em);
     color: var(--basico);
     margin: 0;
     display: flex;
@@ -26,7 +27,6 @@ export const TitleH = styled.p`
 export const WordsH = styled.div`
     /* border: 1px solid red;//....... */
     color: var(--color7);
-    
     &:hover{
         /* color: var(--color7); */
         color: var(--basico);
@@ -41,8 +41,8 @@ export const WordsH = styled.div`
 `
 export const AuxText = styled.p`
     color: var(--basico);
-    width: 90%;
-    max-width: 1000px;
+    width: 80%;
+    max-width: 900px;
     font-size: clamp(1em, 2vw, 2em);
     margin-bottom: 1em;
     &:nth-child(5n-1){

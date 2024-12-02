@@ -56,6 +56,8 @@ const TitleHome = () => {
                 className={change? 'class1 animate': 'class1'}
                 key={index}>{item}</WordsH>)}
             </TitleH>
+            <br></br>
+            <br></br>
             <AuxText>{paragraphHome.split('\n').map((line, i) => {
                 return (
                     <React.Fragment key={i}>
